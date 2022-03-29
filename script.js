@@ -1,3 +1,4 @@
+
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn");
 const home_btn = document.querySelector(".home_btn");
