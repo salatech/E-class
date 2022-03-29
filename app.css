@@ -1,6 +1,7 @@
 
 body{
     font-family: arial;
+    width: 100vw;
 }
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
   *{
@@ -73,7 +74,9 @@ body{
 .myTwo{
   display: none;
   }
-  
+  #output{
+    width: 100%;
+  }
   .info_box.activeInfo,
   .quiz_box.activeQuiz,
   .result_box.activeResult{
@@ -83,7 +86,7 @@ body{
       transform: translate(-50%, -50%) scale(1);
   }
   .info_box{
-      width: 100%;
+      width: 100vw;
       background: #fff;
       border-radius: 5px;
       transform: translate(-50%, -50%) scale(0.9);
