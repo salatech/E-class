@@ -18,7 +18,7 @@ body{
   }
   #h{
     width: 100vw;
-    height: 8vh;
+    height: 6vh;
     background-color: #84c5fe;
   }
   #h ul{
@@ -27,7 +27,7 @@ body{
     color: white;
     align-items: center;
     justify-content: center;
-    height: 8vh;
+    height: 6vh;
   }
   #h ul li{
     width: 25vw;
@@ -37,7 +37,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color:#007bff;
-    padding: 8px;
+    padding: 7px;
     margin-left: 1px;
   }
   #h ul li:hover{
