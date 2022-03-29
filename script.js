@@ -1,5 +1,12 @@
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn");
+const home_btn = document.querySelector(".home_btn");
+const course_btn = document.querySelector(".course_btn");
+const one = document.querySelector("#one");
+const two = document.querySelector("#two");
+const three = document.querySelector("#three");
+
+const book_btn = document.querySelector(".book_btn");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
@@ -12,9 +19,35 @@ const timeCount = document.querySelector(".timer .timer_sec");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
+    info_box.classList.add("activeInfo"); 
+    one.classList.add("d-none")
+    two.classList.add("d-none")
+    three.classList.add("d-none")
+    //show info box
 }
+home_btn.onclick = ()=>{
+    window.location.reload();
+    info_box.classList.remove("activeInfo");
+    two.classList.add("d-none");
+    three.classList.add("d-none");
+    one.classList.remove("d-none");
+    one.classList.add("myOne");
+     //show info box
+}
+course_btn.onclick=()=>{
+    two.classList.remove("d-none");
+    one.classList.add("d-none");
+    info_box.classList.remove("activeInfo");
+    three.classList.add("d-none");
 
+}
+book_btn.onclick=()=>{
+    one.classList.add("d-none");
+    two.classList.add("d-none");
+    info_box.classList.remove("activeInfo");
+    three.classList.remove("d-none");
+
+}
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
