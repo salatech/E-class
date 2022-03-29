@@ -1,7 +1,52 @@
+.navbar {
+  overflow: hidden;
+  background-color:#007bff;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #84c5fe;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
 body{
     font-family: arial;
     width: 100vw;
+
 }
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
   *{
@@ -18,7 +63,7 @@ body{
     display: block;
   }
   #h{
-    width: 100vw;
+    min-width: 100vw;
     height: 6vh;
     background-color: #84c5fe;
   }
