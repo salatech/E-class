@@ -8,14 +8,17 @@
   <title>Quiz APP</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="app.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
   
 </head>
 
 <body  onload="typeWriter()">
   <div class="navbar">
-    <a href="#home" class="home_btn">Home</a>
+  <a href="#home" class="home_btn">Home</a>
     <div class="subnav">
       <button class="subnavbtn"> Content <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
@@ -29,15 +32,14 @@
         </div>
       </div>
     </div>
-   
   </div>
 
-
+  <section class="all">
     <!-- start Quiz button -->
     <section id="one"><p id="demo"></p></section>
     <script>
       var i = 0;
-      var txt = 'ASUU strike?. You can easily Learn and test yourself. More than 500 questions and Over 20 textbooks have been made available for you in this platform';
+      var txt = 'This simple website was designed for 100 level students of Lautech to get acess to numerous texbooks , over 300 past questions to prepare ahead of your various tests. Click on the content button the navbar to get acess to the afforementioned stuffs';
       var speed = 100;
       
       function typeWriter() {
@@ -49,12 +51,39 @@
       }
       </script>
       <section class="d-none" id="four">
-        
+        <div id="card">
+          <img src="me.png" alt="sala">
+          <p id="name" style="word-spacing: 1rem; font-size: 12px;">Abdulrahmon solahudeen is a 300level student of computer Engineering, Ladoke Akintola University of Technology ,
+             he's a web developer ,Budding programmer.Abdulrahmon solahudeen is a 300level student of computer Engineering, Ladoke Akintola University of Technology ,
+             he's a web developer ,Budding programmer.Abdulrahmon solahudeen is a 300level student of computer Engineering, Ladoke Akintola University of Technology ,
+             he's a web developer ,Budding programmer.Abdulrahmon solahudeen is a 300level student of computer Engineering, Ladoke Akintola University of Technology ,
+             he's a web developer ,Budding programmer.
+
+          </p>
+          
+              <div id="bn">
+                <button> <a href="https://web.facebook.com/solahudeen.abdrahmon/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a></button>
+                <button><a href="https://www.instagram.com/sala_tech/">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a></button>
+                <button><a href="https://twitter.com/salatech_01">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a></button>
+                <button><a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a></i></button>
+              </div>
+         
+
+      </div>
+  
       </section>
     <section id="two" class="d-none"> Hi sala</section>
     <section id="three" class="d-none"> Boss</section>
   
-
+<section>
     <!-- Info Box -->
     <div class="info_box">
       <div class="info-title"><span>Some Rules of this Quiz</span></div>
@@ -121,6 +150,8 @@
     <script src="script.js"></script>
   </section>
 
+
+</section>
 </body>
 
 </html>

@@ -1,23 +1,65 @@
-body{
+body, html{
     font-family: arial;
     height: 100%;   
-    width: 100%;
-    background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 100vw;
+    box-sizing: border-box;
 
 }
+#card{
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+       width: 350px;
+       height: 80vh;
+       text-align: center;
+       font-family: arial;
+       margin: auto;
+       color: grey;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+   
+#bn{
+width: 100%;
+}
+#bn button{
+    width:23%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    
+}
+#bn button i{
+    color: blue;
+    font-weight: bolder;
+}
+#card img{
+    background-color: white;
+   
+      margin-bottom: 10px;
+    width: 350px;
+    height: 40vh;
+}
+#four,#one,#two,#three
+{
+    margin-left: -7vh;
+}
+
+.all{
+    margin-top: 10px;
+    margin-left: -10px;
+}
 #demo{
-    font-size: xx-large;
-    color:aliceblue;
+    font-size:800;
+    color:black;
     font-weight: bolder;
     font-style: italic;
-    font:800;
     word-spacing:1rem;
+    word-break: keep-all;
 }
 .navbar {
   overflow: hidden;
-  width: 100%;
+width: 100%;
   background-color:black;
 }
 .navbar a {
@@ -30,7 +72,6 @@ body{
 }
 
 .subnav {
-  float: left;
   overflow: hidden;
 }
 
@@ -72,7 +113,7 @@ margin-left: 1px;
   *{
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing:border-box;
       font-family: 'Poppins', sans-serif;
   }
   main section{
@@ -83,7 +124,7 @@ margin-left: 1px;
     display: block;
   }
   #h{
-    min-width: 100%;
+    width: 100vw;
     height: 6vh;
 
   }
@@ -484,3 +525,11 @@ margin-left: 1px;
       color: #fff;
       background: black;
   }
+@media screen and(max-width:1000px) {
+    .navbar{
+       min-width: 100%;
+    }
+    #h{
+        mim-width: 100%;
+    }
+}
