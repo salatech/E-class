@@ -1,3 +1,11 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+
 #demo{
     font-size: xx-large;
     color:aliceblue;
@@ -8,7 +16,7 @@
 }
 .navbar {
   overflow: hidden;
-  background-color:#007bff;
+  background-color:black;
 }
 .navbar a {
   float: left;
@@ -36,28 +44,33 @@
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: #84c5fe;
+color: aliceblue;
+font-weight: bold;
 }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: red;
   width: 100%;
   z-index: 1;
 }
+.subnav-content li:hover {
+    color: aliceblue;
+font-weight: bold;
+margin-left: 1px;
+}
+
 
 .subnav:hover .subnav-content {
   display: block;
 }
 body{
     font-family: arial;
-    height: 100vh;
+    height: 100%;
     background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-    background-image:linear-gradient(#5a58589b, #2422229b), url("https://www.fercoseating.com/assets/image-handler/content/600x400/8975?format=jpg&bg=F0EEEF");
 
 }
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -77,7 +90,7 @@ body{
   #h{
     min-width: 100vw;
     height: 6vh;
-    background-color: #84c5fe;
+
   }
   #h ul{
     list-style:none;
@@ -94,14 +107,11 @@ body{
     color: white;
     align-items: center;
     justify-content: center;
-    background-color:#007bff;
+    background-color:black;
     padding: 7px;
     margin-left: 1px;
   }
-  #h ul li:hover{
-    background-color: transparent;
-    color: white;
-  }
+  
   .info_box,
   .quiz_box,
   .result_box{
@@ -126,6 +136,9 @@ body{
   .three{
     display: none;
   }
+  .four{
+      display: none;
+  }
   .myOne{
     display: block;
   }
@@ -146,7 +159,7 @@ body{
   }
   .info_box{
       width: 100vw;
-      background: #fff;
+      background: aliceblue;
       border-radius: 5px;
       transform: translate(-50%, -50%) scale(0.9);
       opacity: 0;
@@ -177,7 +190,7 @@ body{
   
   .info_box .info-list .info span{
       font-weight: 600;
-      color: #007bff;
+      color: black;
   }
   .info_box .buttons{
       height: 60px;
@@ -198,13 +211,13 @@ body{
       border: none;
       outline: none;
       border-radius: 5px;
-      border: 1px solid #007bff;
+      border: 1px solid black;
       transition: all 0.3s ease;
   }
   
   .quiz_box{
       width:100%;
-      background: #fff;
+      background: aliceblue;
       border-radius: 5px;
       transform: translate(-50%, -50%) scale(0.9);
       opacity: 0;
@@ -217,7 +230,7 @@ body{
       z-index: 2;
       height: 70px;
       padding: 0 30px;
-      background: #fff;
+      background: aliceblue;
       border-radius: 5px 5px 0 0;
       display: flex;
       align-items: center;
@@ -268,7 +281,7 @@ body{
       bottom: 0px;
       left: 0px;
       height: 3px;
-      background: #007bff;
+      background: black;
   }
   
   section{
@@ -288,7 +301,7 @@ body{
   
   section .option_list .option{
       background: aliceblue;
-      border: 1px solid #84c5fe;
+      border: 1px solid aliceblue;
       border-radius: 5px;
       padding: 8px 15px;
       font-size: 17px;
@@ -382,8 +395,8 @@ body{
       outline: none;
       color: #fff;
       border-radius: 5px;
-      background: #007bff;
-      border: 1px solid #007bff;
+      background: black;
+      border: 1px solid black;
       line-height: 10px;
       opacity: 0;
       pointer-events: none;
@@ -418,7 +431,7 @@ body{
   
   .result_box .icon{
       font-size: 100px;
-      color: #007bff;
+      color: black;
       margin-bottom: 10px;
   }
   
@@ -454,13 +467,13 @@ body{
       border: none;
       outline: none;
       border-radius: 5px;
-      border: 1px solid #007bff;
+      border: 1px solid black;
       transition: all 0.3s ease;
   }
   
   .buttons button.restart{
       color: #fff;
-      background: #007bff;
+      background: black;
   }
   
   .buttons button.restart:hover{
@@ -468,11 +481,11 @@ body{
   }
   
   .buttons button.quit{
-      color: #007bff;
+      color: black;
       background: #fff;
   }
   
   .buttons button.quit:hover{
       color: #fff;
-      background: #007bff;
+      background: black;
   }

@@ -3,6 +3,8 @@
 const start_btn = document.querySelector(".start_btn");
 const home_btn = document.querySelector(".home_btn");
 const course_btn = document.querySelector(".course_btn");
+const dev_btn = document.querySelector(".dev_btn");
+const four = document.querySelector("#four");
 const one = document.querySelector("#one");
 const two = document.querySelector("#two");
 const three = document.querySelector("#three");
@@ -22,6 +24,7 @@ const timeCount = document.querySelector(".timer .timer_sec");
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); 
     one.classList.add("d-none")
+    four.classList.add("d-none");
     two.classList.add("d-none")
     three.classList.add("d-none")
     //show info box
@@ -32,12 +35,14 @@ home_btn.onclick = ()=>{
     two.classList.add("d-none");
     three.classList.add("d-none");
     one.classList.remove("d-none");
+    four.classList.add("d-none");
     one.classList.add("myOne");
      //show info box
 }
 course_btn.onclick=()=>{
     two.classList.remove("d-none");
     one.classList.add("d-none");
+    four.classList.add("d-none");
     info_box.classList.remove("activeInfo");
     three.classList.add("d-none");
 
@@ -45,9 +50,16 @@ course_btn.onclick=()=>{
 book_btn.onclick=()=>{
     one.classList.add("d-none");
     two.classList.add("d-none");
+    four.classList.add("d-none");
     info_box.classList.remove("activeInfo");
     three.classList.remove("d-none");
 
+}
+dev_btn.onclick=()=>{
+    two.classList.add("d-none");
+    one.classList.add("d-none");
+    info_box.classList.remove("activeInfo");
+    four.classList.remove("d-none");
 }
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
